@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Oct 15 04:45:07 2013
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : cineraria_ulexite_top
+Top-level Entity Name : cineraria_ulexite_top
+Family : Cyclone III
+Device : EP3C16F484C6
+Timing Models : Final
+Total logic elements : 11,963 / 15,408 ( 78 % )
+    Total combinational functions : 10,283 / 15,408 ( 67 % )
+    Dedicated logic registers : 7,431 / 15,408 ( 48 % )
+Total registers : 7526
+Total pins : 174 / 347 ( 50 % )
+Total virtual pins : 0
+Total memory bits : 274,388 / 516,096 ( 53 % )
+Embedded Multiplier 9-bit elements : 31 / 112 ( 28 % )
+Total PLLs : 2 / 4 ( 50 % )

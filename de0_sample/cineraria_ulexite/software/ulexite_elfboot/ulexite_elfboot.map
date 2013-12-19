@@ -1,0 +1,523 @@
+Archive member included because of file (symbol)
+
+../ulexite_elfboot_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              obj/default/nd_elf3.o (alt_dcache_flush_all)
+../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              obj/default/nd_elf3.o (alt_icache_flush_all)
+../ulexite_elfboot_bsp/\libhal_bsp.a(alt_load.o)
+                              ../ulexite_elfboot_bsp//obj/HAL/src/crt0.o (alt_load)
+../ulexite_elfboot_bsp/\libhal_bsp.a(alt_main.o)
+                              ../ulexite_elfboot_bsp//obj/HAL/src/crt0.o (alt_main)
+../ulexite_elfboot_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_main.o) (alt_sys_init)
+../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                              ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush_all.o) (alt_icache_flush)
+../ulexite_elfboot_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                              ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
+
+Allocating common symbols
+Common symbol       size              file
+
+g_fatfs_work        0x2c              obj/default/nd_elf3.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+sdram_BEFORE_EXCEPTION 0x00000000         0x00000020
+sdram            0x00000020         0x007fffe0
+reset            0x0f000000         0x00000020
+ipl_memory       0x0f000020         0x00001fe0
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ../ulexite_elfboot_bsp//obj/HAL/src/crt0.o
+                0x0f00001c                exit = _exit
+LOAD obj/default/mmc.o
+LOAD obj/default/mmc_spi.o
+LOAD obj/default/nd_elf3.o
+LOAD obj/default/pff.o
+LOAD c:/develop/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib\libstdc++.a
+LOAD c:/develop/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib\libm.a
+LOAD c:/develop/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a
+START GROUP
+LOAD c:/develop/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib\libsmallc.a
+LOAD c:/develop/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a
+LOAD ../ulexite_elfboot_bsp/\libhal_bsp.a
+END GROUP
+LOAD c:/develop/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a
+                0x00000000                __alt_mem_sdram = 0x0
+                0x0f000000                __alt_mem_ipl_memory = 0xf000000
+
+.entry          0x0f000000       0x20
+ *(.entry)
+ .entry         0x0f000000       0x20 ../ulexite_elfboot_bsp//obj/HAL/src/crt0.o
+                0x0f000000                __reset
+                0x0f00001c                _exit
+
+.exceptions     0x00000020        0x0
+                0x00000020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x00000020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ *(.exceptions.entry.user)
+ *(.exceptions.entry)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ *(.exceptions.notirq.label)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ *(.exceptions.exit.label)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ *(.exceptions)
+                0x00000020                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x00000020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x0f000020     0x166c
+                0x0f000020                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0f000020       0x4c ../ulexite_elfboot_bsp//obj/HAL/src/crt0.o
+                0x0f000020                _start
+ .text          0x0f00006c      0x3d0 obj/default/mmc.o
+                0x0f0001b8                disk_readp
+                0x0f000298                disk_initialize
+ .text          0x0f00043c      0x16c obj/default/mmc_spi.o
+                0x0f00043c                mmc_spi_CheckTimer
+                0x0f00044c                mmc_spi_CheckCardDetect
+                0x0f000464                mmc_spi_CheckWritePortect
+                0x0f00049c                mmc_spi_Wait100us
+                0x0f0004bc                mmc_spi_SetTimer
+                0x0f0004d0                mmc_spi_SetTransClock
+                0x0f0004e0                mmc_spi_SetIdentClock
+                0x0f0004f0                mmc_spi_Recvbyte
+                0x0f000524                mmc_spi_Sendbyte
+                0x0f000548                mmc_spi_SetCardDeselect
+                0x0f000560                mmc_spi_InitSocket
+                0x0f000594                mmc_spi_SetCardSelect
+ .text          0x0f0005a8      0x3a4 obj/default/nd_elf3.o
+                0x0f0005a8                dgb_printf
+                0x0f0005c4                main
+ .text          0x0f00094c      0xc00 obj/default/pff.o
+                0x0f000c9c                pf_lseek
+                0x0f000dc4                pf_read
+                0x0f000f4c                pf_open
+                0x0f0012a4                pf_mount
+ .text          0x0f00154c       0x18 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x0f00154c                alt_dcache_flush_all
+ .text          0x0f001564        0xc ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x0f001564                alt_icache_flush_all
+ .text          0x0f001570       0x8c ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_load.o)
+                0x0f001590                alt_load
+ .text          0x0f0015fc       0x2c ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_main.o)
+                0x0f0015fc                alt_main
+ .text          0x0f001628       0x24 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0f001628                alt_sys_init
+                0x0f00162c                alt_irq_init
+ .text          0x0f00164c       0x38 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                0x0f00164c                alt_icache_flush
+ .text          0x0f001684        0x8 ../ulexite_elfboot_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x0f001684                altera_nios2_qsys_irq_init
+ *(.gnu.warning.*)
+ *(.fini)
+                0x0f00168c                PROVIDE (__etext, ABSOLUTE (.))
+                0x0f00168c                PROVIDE (_etext, ABSOLUTE (.))
+                0x0f00168c                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x0f00168c                . = ALIGN (0x4)
+                0x0f00168c                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x0f00168c                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x0f00168c                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x0f00168c                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x0f00168c                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x0f00168c                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table)
+ *(.dynamic)
+                0x0f00168c                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x0f00168c                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x0f00168c                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x0f00168c                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x0f00168c                . = ALIGN (0x4)
+
+.rodata         0x0f00168c       0x10
+                0x0f00168c                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x0f00168c                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x0f00168c       0x10 obj/default/nd_elf3.o
+ *(.rodata1)
+                0x0f00169c                . = ALIGN (0x4)
+                0x0f00169c                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x0f00168c                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x0f00169c        0x8
+                0x0f00169c                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x0f00169c                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0f00169c        0x0 ../ulexite_elfboot_bsp//obj/HAL/src/crt0.o
+ .data          0x0f00169c        0x0 obj/default/mmc.o
+ .data          0x0f00169c        0x0 obj/default/mmc_spi.o
+ .data          0x0f00169c        0x0 obj/default/nd_elf3.o
+ .data          0x0f00169c        0x0 obj/default/pff.o
+ .data          0x0f00169c        0x0 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x0f00169c        0x0 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x0f00169c        0x0 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x0f00169c        0x0 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x0f00169c        0x0 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x0f00169c        0x0 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .data          0x0f00169c        0x0 ../ulexite_elfboot_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x0f00969c                _gp = ABSOLUTE ((. + 0x8000))
+                0x0f00969c                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x0f00169c        0x8 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0f00169c                jtag_uart
+                0x0f0016a0                sysuart
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x0f0016a4                . = ALIGN (0x4)
+                0x0f0016a4                _edata = ABSOLUTE (.)
+                0x0f0016a4                PROVIDE (edata, ABSOLUTE (.))
+                0x0f0016a4                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x0f00169c                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x0f0016a4       0x9c
+                0x0f0016a4                __bss_start = ABSOLUTE (.)
+                0x0f0016a4                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x0f0016a4                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0f0016a4        0x1 obj/default/mmc.o
+ *fill*         0x0f0016a5        0x3 00
+ .sbss          0x0f0016a8        0x8 obj/default/mmc_spi.o
+ .sbss          0x0f0016b0        0x4 obj/default/pff.o
+ .sbss          0x0f0016b4        0xc ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_main.o)
+                0x0f0016b4                alt_argc
+                0x0f0016b8                alt_argv
+                0x0f0016bc                alt_envp
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x0f0016c0                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x0f0016c0                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0f0016c0        0x0 ../ulexite_elfboot_bsp//obj/HAL/src/crt0.o
+ .bss           0x0f0016c0        0x0 obj/default/mmc.o
+ .bss           0x0f0016c0        0x0 obj/default/mmc_spi.o
+ .bss           0x0f0016c0       0x54 obj/default/nd_elf3.o
+ .bss           0x0f001714        0x0 obj/default/pff.o
+ .bss           0x0f001714        0x0 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x0f001714        0x0 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x0f001714        0x0 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x0f001714        0x0 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x0f001714        0x0 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x0f001714        0x0 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .bss           0x0f001714        0x0 ../ulexite_elfboot_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ *(COMMON)
+ COMMON         0x0f001714       0x2c obj/default/nd_elf3.o
+                0x0f001714                g_fatfs_work
+                0x0f001740                . = ALIGN (0x4)
+                0x0f001740                __bss_end = ABSOLUTE (.)
+
+.sdram          0x00000020        0x0
+                0x00000020                PROVIDE (_alt_partition_sdram_start, ABSOLUTE (.))
+ *(.sdram. sdram.*)
+                0x00000020                . = ALIGN (0x4)
+                0x00000020                PROVIDE (_alt_partition_sdram_end, ABSOLUTE (.))
+                0x00000020                PROVIDE (_alt_partition_sdram_load_addr, LOADADDR (.sdram))
+
+.ipl_memory     0x0f001740        0x0
+                0x0f001740                PROVIDE (_alt_partition_ipl_memory_start, ABSOLUTE (.))
+ *(.ipl_memory. ipl_memory.*)
+                0x0f001740                . = ALIGN (0x4)
+                0x0f001740                PROVIDE (_alt_partition_ipl_memory_end, ABSOLUTE (.))
+                0x0f001740                _end = ABSOLUTE (.)
+                0x0f001740                end = ABSOLUTE (.)
+                0x0f001740                __alt_stack_base = ABSOLUTE (.)
+                0x0f001740                PROVIDE (_alt_partition_ipl_memory_load_addr, LOADADDR (.ipl_memory))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x26
+ *(.comment)
+ .comment       0x00000000       0x26 obj/default/mmc.o
+                                 0x27 (size before relaxing)
+ .comment       0x00000000       0x27 obj/default/mmc_spi.o
+ .comment       0x00000000       0x27 obj/default/nd_elf3.o
+ .comment       0x00000000       0x27 obj/default/pff.o
+ .comment       0x00000000       0x27 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x00000000       0x27 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x00000000       0x27 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x00000000       0x27 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x00000000       0x27 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x00000000       0x27 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .comment       0x00000000       0x27 ../ulexite_elfboot_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x188
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 ../ulexite_elfboot_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x00000028       0x20 obj/default/mmc.o
+ .debug_aranges
+                0x00000048       0x20 obj/default/mmc_spi.o
+ .debug_aranges
+                0x00000068       0x20 obj/default/nd_elf3.o
+ .debug_aranges
+                0x00000088       0x20 obj/default/pff.o
+ .debug_aranges
+                0x000000a8       0x20 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x000000c8       0x20 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x000000e8       0x20 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x00000108       0x20 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000128       0x20 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000148       0x20 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_aranges
+                0x00000168       0x20 ../ulexite_elfboot_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_pubnames
+                0x00000000      0x34e
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x35 obj/default/mmc.o
+ .debug_pubnames
+                0x00000035      0x139 obj/default/mmc_spi.o
+ .debug_pubnames
+                0x0000016e       0x3b obj/default/nd_elf3.o
+ .debug_pubnames
+                0x000001a9       0x44 obj/default/pff.o
+ .debug_pubnames
+                0x000001ed       0x2b ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_pubnames
+                0x00000218       0x2b ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_pubnames
+                0x00000243       0x1f ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_pubnames
+                0x00000262       0x46 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_pubnames
+                0x000002a8       0x4e ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_pubnames
+                0x000002f6       0x27 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_pubnames
+                0x0000031d       0x31 ../ulexite_elfboot_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_info     0x00000000     0x1a00
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x7c ../ulexite_elfboot_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000007c      0x28a obj/default/mmc.o
+ .debug_info    0x00000306      0x1d0 obj/default/mmc_spi.o
+ .debug_info    0x000004d6      0x513 obj/default/nd_elf3.o
+ .debug_info    0x000009e9      0x965 obj/default/pff.o
+ .debug_info    0x0000134e       0x9f ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x000013ed       0x8d ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x0000147a      0x12e ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x000015a8      0x125 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x000016cd      0x1d1 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x0000189e       0xd5 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_info    0x00001973       0x8d ../ulexite_elfboot_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_abbrev   0x00000000      0x9b8
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x12 ../ulexite_elfboot_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x00000012      0x15c obj/default/mmc.o
+ .debug_abbrev  0x0000016e      0x100 obj/default/mmc_spi.o
+ .debug_abbrev  0x0000026e      0x1a8 obj/default/nd_elf3.o
+ .debug_abbrev  0x00000416      0x21d obj/default/pff.o
+ .debug_abbrev  0x00000633       0x57 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x0000068a       0x3f ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x000006c9       0x97 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x00000760       0xa6 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000806       0xea ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x000008f0       0x89 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_abbrev  0x00000979       0x3f ../ulexite_elfboot_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_line     0x00000000     0x226c
+ *(.debug_line)
+ .debug_line    0x00000000       0x72 ../ulexite_elfboot_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x00000072      0x33f obj/default/mmc.o
+ .debug_line    0x000003b1      0x215 obj/default/mmc_spi.o
+ .debug_line    0x000005c6      0x49d obj/default/nd_elf3.o
+ .debug_line    0x00000a63      0x8a0 obj/default/pff.o
+ .debug_line    0x00001303      0x1dd ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x000014e0      0x1d5 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x000016b5      0x227 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x000018dc      0x2d2 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x00001bae      0x2ef ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x00001e9d      0x1f1 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_line    0x0000208e      0x1de ../ulexite_elfboot_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_frame    0x00000000      0x3d8
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x98 obj/default/mmc.o
+ .debug_frame   0x00000098       0xe0 obj/default/mmc_spi.o
+ .debug_frame   0x00000178       0x48 obj/default/nd_elf3.o
+ .debug_frame   0x000001c0      0x100 obj/default/pff.o
+ .debug_frame   0x000002c0       0x20 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x000002e0       0x20 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x00000300       0x38 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x00000338       0x28 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000360       0x38 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x00000398       0x20 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_frame   0x000003b8       0x20 ../ulexite_elfboot_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_str      0x00000000      0x95e
+ *(.debug_str)
+ .debug_str     0x00000000      0x132 obj/default/mmc.o
+                                0x175 (size before relaxing)
+ .debug_str     0x00000132      0x135 obj/default/mmc_spi.o
+                                0x1ff (size before relaxing)
+ .debug_str     0x00000267      0x28e obj/default/nd_elf3.o
+                                0x392 (size before relaxing)
+ .debug_str     0x000004f5       0xd8 obj/default/pff.o
+                                0x2b7 (size before relaxing)
+ .debug_str     0x000005cd       0x7f ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                0x114 (size before relaxing)
+ .debug_str     0x0000064c       0x34 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                0x114 (size before relaxing)
+ .debug_str     0x00000680       0xe9 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_load.o)
+                                0x1d1 (size before relaxing)
+ .debug_str     0x00000769       0x70 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_main.o)
+                                0x155 (size before relaxing)
+ .debug_str     0x000007d9      0x11e ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                0x23c (size before relaxing)
+ .debug_str     0x000008f7       0x2c ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                                0x11a (size before relaxing)
+ .debug_str     0x00000923       0x3b ../ulexite_elfboot_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                                0x11b (size before relaxing)
+
+.debug_loc      0x00000000      0xe7f
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x352 obj/default/mmc.o
+ .debug_loc     0x00000352       0x51 obj/default/mmc_spi.o
+ .debug_loc     0x000003a3       0xd7 obj/default/nd_elf3.o
+ .debug_loc     0x0000047a      0x982 obj/default/pff.o
+ .debug_loc     0x00000dfc       0x1f ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_loc     0x00000e1b       0x1f ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_loc     0x00000e3a       0x32 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00000e6c       0x13 ../ulexite_elfboot_bsp/\libhal_bsp.a(alt_icache_flush.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x00000000       0x30
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x00000000       0x30 ../ulexite_elfboot_bsp//obj/HAL/src/crt0.o
+                0x0f002000                __alt_data_end = 0xf002000
+                0x0f002000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x0f001740                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x0f001740                PROVIDE (__alt_heap_start, end)
+                0x0f002000                PROVIDE (__alt_heap_limit, 0xf002000)
+OUTPUT(ulexite_elfboot.elf elf32-littlenios2)
+
+.debug_ranges   0x00000000      0x188
+ .debug_ranges  0x00000000       0x20 ../ulexite_elfboot_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x00000020       0x40 obj/default/nd_elf3.o
+ .debug_ranges  0x00000060      0x128 obj/default/pff.o

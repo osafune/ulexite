@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="Avalon-MM Interfaces">
+  <columns>
+   <connections preferredWidth="95" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="380" />
+   <clocksource preferredWidth="380" />
+   <frequency preferredWidth="367" />
+  </columns>
+ </clocktable>
+ <window width="1522" height="870" x="270" y="46" />
+ <library expandedCategories="Project,Library,Project/Peripherals" />
+ <hdlexample language="VERILOG" />
+ <generation synthesis="VHDL" />
+</preferences>

@@ -1,0 +1,50 @@
+	component cineraria_core is
+		port (
+			clk_100mhz_clk    : in    std_logic                     := 'X';             -- clk
+			sys_reset_reset_n : in    std_logic                     := 'X';             -- reset_n
+			clk_40mhz_clk     : in    std_logic                     := 'X';             -- clk
+			sysuart_rxd       : in    std_logic                     := 'X';             -- rxd
+			sysuart_txd       : out   std_logic;                                        -- txd
+			sysuart_cts_n     : in    std_logic                     := 'X';             -- cts_n
+			sysuart_rts_n     : out   std_logic;                                        -- rts_n
+			sdr_addr          : out   std_logic_vector(11 downto 0);                    -- addr
+			sdr_ba            : out   std_logic_vector(1 downto 0);                     -- ba
+			sdr_cas_n         : out   std_logic;                                        -- cas_n
+			sdr_cke           : out   std_logic;                                        -- cke
+			sdr_cs_n          : out   std_logic;                                        -- cs_n
+			sdr_dq            : inout std_logic_vector(15 downto 0) := (others => 'X'); -- dq
+			sdr_dqm           : out   std_logic_vector(1 downto 0);                     -- dqm
+			sdr_ras_n         : out   std_logic;                                        -- ras_n
+			sdr_we_n          : out   std_logic;                                        -- we_n
+			led_export        : out   std_logic_vector(9 downto 0);                     -- export
+			led_7seg_export   : out   std_logic_vector(31 downto 0);                    -- export
+			psw_export        : in    std_logic_vector(2 downto 0)  := (others => 'X'); -- export
+			dipsw_export      : in    std_logic_vector(9 downto 0)  := (others => 'X'); -- export
+			spu_clk_128fs     : in    std_logic                     := 'X';             -- clk_128fs
+			spu_DAC_BCLK      : out   std_logic;                                        -- DAC_BCLK
+			spu_DAC_LRCK      : out   std_logic;                                        -- DAC_LRCK
+			spu_DAC_DATA      : out   std_logic;                                        -- DAC_DATA
+			spu_AUD_L         : out   std_logic;                                        -- AUD_L
+			spu_AUD_R         : out   std_logic;                                        -- AUD_R
+			spu_SPDIF         : out   std_logic;                                        -- SPDIF
+			mmc_nCS           : out   std_logic;                                        -- nCS
+			mmc_SCK           : out   std_logic;                                        -- SCK
+			mmc_SDO           : out   std_logic;                                        -- SDO
+			mmc_SDI           : in    std_logic                     := 'X';             -- SDI
+			mmc_CD            : in    std_logic                     := 'X';             -- CD
+			mmc_WP            : in    std_logic                     := 'X';             -- WP
+			ps2kb_CLK         : inout std_logic                     := 'X';             -- CLK
+			ps2kb_DAT         : inout std_logic                     := 'X';             -- DAT
+			gpio1_export      : inout std_logic_vector(31 downto 0) := (others => 'X'); -- export
+			vga_clk           : in    std_logic                     := 'X';             -- clk
+			vga_rout          : out   std_logic_vector(4 downto 0);                     -- rout
+			vga_gout          : out   std_logic_vector(4 downto 0);                     -- gout
+			vga_bout          : out   std_logic_vector(4 downto 0);                     -- bout
+			vga_hsync_n       : out   std_logic;                                        -- hsync_n
+			vga_vsync_n       : out   std_logic;                                        -- vsync_n
+			vga_enable        : out   std_logic;                                        -- enable
+			blcon_on          : out   std_logic;                                        -- on
+			blcon_pwm         : out   std_logic                                         -- pwm
+		);
+	end component cineraria_core;
+

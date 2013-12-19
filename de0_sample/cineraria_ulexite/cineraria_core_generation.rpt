@@ -1,0 +1,316 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/ --output-directory=C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/cineraria_core/ --report-file=bsf:C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/cineraria_core.bsf --system-info=DEVICE_FAMILY="Cyclone III" --system-info=DEVICE=EP3C16F484C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/cineraria_core.qsys
+Progress: Loading cineraria_ulexite/cineraria_core.qsys
+Progress: Reading input file
+Progress: Adding clk_core [clock_source 13.0]
+Progress: Parameterizing module clk_core
+Progress: Adding clk_peri [clock_source 13.0]
+Progress: Parameterizing module clk_peri
+Progress: Adding peripherals_bridge [altera_avalon_mm_clock_crossing_bridge 13.0]
+Progress: Parameterizing module peripherals_bridge
+Progress: Adding nios2_fast [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_fast
+Progress: Adding nios_custom_instr_fpoint [altera_nios_custom_instr_floating_point 13.0]
+Progress: Parameterizing module nios_custom_instr_fpoint
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding sysuart [altera_avalon_uart 13.0.1.99.2]
+Progress: Parameterizing module sysuart
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module sdram
+Progress: Adding ipl_memory [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module ipl_memory
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding systimer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module systimer
+Progress: Adding led [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led
+Progress: Adding led_7seg [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led_7seg
+Progress: Adding psw [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module psw
+Progress: Adding dipsw [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module dipsw
+Progress: Adding nios_custom_instr_pixelsimd [pixelsimd 1.0]
+Progress: Parameterizing module nios_custom_instr_pixelsimd
+Progress: Adding spu [avalonif_spu 1.0]
+Progress: Parameterizing module spu
+Progress: Adding mmcdma [mmcdma 1.0]
+Progress: Parameterizing module mmcdma
+Progress: Adding ps2_keyboard [ps2_component 1.0]
+Progress: Parameterizing module ps2_keyboard
+Progress: Adding gpio1 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module gpio1
+Progress: Adding vga [vga_component 1.1]
+Progress: Parameterizing module vga
+Progress: Adding blcon [backlight_controller 1.0]
+Progress: Parameterizing module blcon
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: cineraria_core.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: cineraria_core.sysid: Time stamp will be automatically updated when this component is generated.
+Info: cineraria_core.psw: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cineraria_core.dipsw: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: cineraria_core.avalonif_spu: The sim_vhdl fileset must specify the top-level module name.
+Info: cineraria_core.gpio1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/ --output-directory=C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/cineraria_core/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/cineraria_core.sopcinfo --report-file=html:C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/cineraria_core.html --report-file=qip:C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/cineraria_core/synthesis/cineraria_core.qip --report-file=cmp:C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/cineraria_core.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone III" --system-info=DEVICE=EP3C16F484C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/cineraria_core.qsys --language=VHDL
+Progress: Loading cineraria_ulexite/cineraria_core.qsys
+Progress: Reading input file
+Progress: Adding clk_core [clock_source 13.0]
+Progress: Parameterizing module clk_core
+Progress: Adding clk_peri [clock_source 13.0]
+Progress: Parameterizing module clk_peri
+Progress: Adding peripherals_bridge [altera_avalon_mm_clock_crossing_bridge 13.0]
+Progress: Parameterizing module peripherals_bridge
+Progress: Adding nios2_fast [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_fast
+Progress: Adding nios_custom_instr_fpoint [altera_nios_custom_instr_floating_point 13.0]
+Progress: Parameterizing module nios_custom_instr_fpoint
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding sysuart [altera_avalon_uart 13.0.1.99.2]
+Progress: Parameterizing module sysuart
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module sdram
+Progress: Adding ipl_memory [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module ipl_memory
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding systimer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module systimer
+Progress: Adding led [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led
+Progress: Adding led_7seg [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led_7seg
+Progress: Adding psw [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module psw
+Progress: Adding dipsw [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module dipsw
+Progress: Adding nios_custom_instr_pixelsimd [pixelsimd 1.0]
+Progress: Parameterizing module nios_custom_instr_pixelsimd
+Progress: Adding spu [avalonif_spu 1.0]
+Progress: Parameterizing module spu
+Progress: Adding mmcdma [mmcdma 1.0]
+Progress: Parameterizing module mmcdma
+Progress: Adding ps2_keyboard [ps2_component 1.0]
+Progress: Parameterizing module ps2_keyboard
+Progress: Adding gpio1 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module gpio1
+Progress: Adding vga [vga_component 1.1]
+Progress: Parameterizing module vga
+Progress: Adding blcon [backlight_controller 1.0]
+Progress: Parameterizing module blcon
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: cineraria_core.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: cineraria_core.sysid: Time stamp will be automatically updated when this component is generated.
+Info: cineraria_core.psw: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cineraria_core.dipsw: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: cineraria_core.avalonif_spu: The sim_vhdl fileset must specify the top-level module name.
+Info: cineraria_core.gpio1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cineraria_core: Generating cineraria_core "cineraria_core" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 22 modules, 74 connections
+Info: merlin_custom_instruction_transform: After transform: 26 modules, 78 connections
+Info: merlin_translator_transform: After transform: 49 modules, 147 connections
+Info: merlin_domain_transform: After transform: 96 modules, 387 connections
+Info: merlin_router_transform: After transform: 119 modules, 456 connections
+Info: merlin_traffic_limiter_transform: After transform: 122 modules, 468 connections
+Info: merlin_burst_transform: After transform: 126 modules, 480 connections
+Info: reset_adaptation_transform: After transform: 129 modules, 486 connections
+Info: merlin_network_to_switch_transform: After transform: 173 modules, 578 connections
+Info: merlin_width_transform: After transform: 179 modules, 596 connections
+Info: limiter_update_transform: After transform: 179 modules, 599 connections
+Info: merlin_mm_transform: After transform: 179 modules, 599 connections
+Info: merlin_interrupt_mapper_transform: After transform: 180 modules, 602 connections
+Info: merlin_interrupt_sync_transform: After transform: 188 modules, 642 connections
+Warning: cineraria_core: "No matching role found for nios2_fast_custom_instruction_master_translator:ci_slave:ci_slave_result (result)"
+Warning: cineraria_core: "No matching role found for nios2_fast_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_ipending (ipending)"
+Warning: cineraria_core: "No matching role found for nios2_fast_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_estatus (estatus)"
+Warning: cineraria_core: "No matching role found for sysuart:s1:dataavailable (dataavailable)"
+Warning: cineraria_core: "No matching role found for sysuart:s1:readyfordata (readyfordata)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Warning: cineraria_core: "No matching role found for rst_controller_001:reset_out:reset_req (reset_req)"
+Info: peripherals_bridge: "cineraria_core" instantiated altera_avalon_mm_clock_crossing_bridge "peripherals_bridge"
+Info: nios2_fast: Starting RTL generation for module 'cineraria_core_nios2_fast'
+Info: nios2_fast:   Generation command is [exec C:/develop/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/develop/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin -I C:/develop/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/develop/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/develop/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/develop/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/develop/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=cineraria_core_nios2_fast --dir=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0004_nios2_fast_gen/ --quartus_dir=C:/develop/altera/13.0sp1/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0004_nios2_fast_gen//cineraria_core_nios2_fast_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2_fast: # 2013.10.15 04:24:51 (*) Starting Nios II generation
+Info: nios2_fast: # 2013.10.15 04:24:51 (*)   Checking for plaintext license.
+Info: nios2_fast: # 2013.10.15 04:24:51 (*)   Plaintext license not found.
+Info: nios2_fast: # 2013.10.15 04:24:51 (*)   Checking for encrypted license (non-evaluation).
+Info: nios2_fast: # 2013.10.15 04:24:52 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: nios2_fast: # 2013.10.15 04:24:52 (*)   Elaborating CPU configuration settings
+Info: nios2_fast: # 2013.10.15 04:24:52 (*)   Creating all objects for CPU
+Info: nios2_fast: # 2013.10.15 04:24:52 (*)     Testbench
+Info: nios2_fast: # 2013.10.15 04:24:52 (*)     Instruction decoding
+Info: nios2_fast: # 2013.10.15 04:24:52 (*)       Instruction fields
+Info: nios2_fast: # 2013.10.15 04:24:52 (*)       Instruction decodes
+Info: nios2_fast: # 2013.10.15 04:24:53 (*)       Signals for RTL simulation waveforms
+Info: nios2_fast: # 2013.10.15 04:24:53 (*)       Instruction controls
+Info: nios2_fast: # 2013.10.15 04:24:53 (*)     Pipeline frontend
+Info: nios2_fast: # 2013.10.15 04:24:53 (*)     Pipeline backend
+Info: nios2_fast: # 2013.10.15 04:24:56 (*)   Generating RTL from CPU objects
+Info: nios2_fast: # 2013.10.15 04:25:01 (*)   Creating encrypted RTL
+Info: nios2_fast: # 2013.10.15 04:25:02 (*) Done Nios II generation
+Info: nios2_fast: Done RTL generation for module 'cineraria_core_nios2_fast'
+Info: nios2_fast: "cineraria_core" instantiated altera_nios2_qsys "nios2_fast"
+Info: nios_custom_instr_fpoint: "cineraria_core" instantiated altera_nios_custom_instr_floating_point "nios_custom_instr_fpoint"
+Info: jtag_uart: Starting RTL generation for module 'cineraria_core_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/develop/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/develop/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=cineraria_core_jtag_uart --dir=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0005_jtag_uart_gen/ --quartus_dir=C:/develop/altera/13.0sp1/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0005_jtag_uart_gen//cineraria_core_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'cineraria_core_jtag_uart'
+Info: jtag_uart: "cineraria_core" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: sysuart: Starting RTL generation for module 'cineraria_core_sysuart'
+Info: sysuart:   Generation command is [exec C:/develop/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/develop/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=cineraria_core_sysuart --dir=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0006_sysuart_gen/ --quartus_dir=C:/develop/altera/13.0sp1/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0006_sysuart_gen//cineraria_core_sysuart_component_configuration.pl  --do_build_sim=0  ]
+Info: sysuart: Done RTL generation for module 'cineraria_core_sysuart'
+Info: sysuart: "cineraria_core" instantiated altera_avalon_uart "sysuart"
+Info: sdram: Starting RTL generation for module 'cineraria_core_sdram'
+Info: sdram:   Generation command is [exec C:/develop/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/develop/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=cineraria_core_sdram --dir=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0007_sdram_gen/ --quartus_dir=C:/develop/altera/13.0sp1/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0007_sdram_gen//cineraria_core_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram: Done RTL generation for module 'cineraria_core_sdram'
+Info: sdram: "cineraria_core" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: ipl_memory: Starting RTL generation for module 'cineraria_core_ipl_memory'
+Info: ipl_memory:   Generation command is [exec C:/develop/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/develop/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=cineraria_core_ipl_memory --dir=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0008_ipl_memory_gen/ --quartus_dir=C:/develop/altera/13.0sp1/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0008_ipl_memory_gen//cineraria_core_ipl_memory_component_configuration.pl  --do_build_sim=0  ]
+Info: ipl_memory: Done RTL generation for module 'cineraria_core_ipl_memory'
+Info: ipl_memory: "cineraria_core" instantiated altera_avalon_onchip_memory2 "ipl_memory"
+Info: sysid: "cineraria_core" instantiated altera_avalon_sysid_qsys "sysid"
+Info: systimer: Starting RTL generation for module 'cineraria_core_systimer'
+Info: systimer:   Generation command is [exec C:/develop/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/develop/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=cineraria_core_systimer --dir=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0010_systimer_gen/ --quartus_dir=C:/develop/altera/13.0sp1/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0010_systimer_gen//cineraria_core_systimer_component_configuration.pl  --do_build_sim=0  ]
+Info: systimer: Done RTL generation for module 'cineraria_core_systimer'
+Info: systimer: "cineraria_core" instantiated altera_avalon_timer "systimer"
+Info: led: Starting RTL generation for module 'cineraria_core_led'
+Info: led:   Generation command is [exec C:/develop/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/develop/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cineraria_core_led --dir=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0011_led_gen/ --quartus_dir=C:/develop/altera/13.0sp1/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0011_led_gen//cineraria_core_led_component_configuration.pl  --do_build_sim=0  ]
+Info: led: Done RTL generation for module 'cineraria_core_led'
+Info: led: "cineraria_core" instantiated altera_avalon_pio "led"
+Info: led_7seg: Starting RTL generation for module 'cineraria_core_led_7seg'
+Info: led_7seg:   Generation command is [exec C:/develop/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/develop/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cineraria_core_led_7seg --dir=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0012_led_7seg_gen/ --quartus_dir=C:/develop/altera/13.0sp1/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0012_led_7seg_gen//cineraria_core_led_7seg_component_configuration.pl  --do_build_sim=0  ]
+Info: led_7seg: Done RTL generation for module 'cineraria_core_led_7seg'
+Info: led_7seg: "cineraria_core" instantiated altera_avalon_pio "led_7seg"
+Info: psw: Starting RTL generation for module 'cineraria_core_psw'
+Info: psw:   Generation command is [exec C:/develop/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/develop/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cineraria_core_psw --dir=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0013_psw_gen/ --quartus_dir=C:/develop/altera/13.0sp1/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0013_psw_gen//cineraria_core_psw_component_configuration.pl  --do_build_sim=0  ]
+Info: psw: Done RTL generation for module 'cineraria_core_psw'
+Info: psw: "cineraria_core" instantiated altera_avalon_pio "psw"
+Info: dipsw: Starting RTL generation for module 'cineraria_core_dipsw'
+Info: dipsw:   Generation command is [exec C:/develop/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/develop/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cineraria_core_dipsw --dir=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0014_dipsw_gen/ --quartus_dir=C:/develop/altera/13.0sp1/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0014_dipsw_gen//cineraria_core_dipsw_component_configuration.pl  --do_build_sim=0  ]
+Info: dipsw: Done RTL generation for module 'cineraria_core_dipsw'
+Info: dipsw: "cineraria_core" instantiated altera_avalon_pio "dipsw"
+Info: nios_custom_instr_pixelsimd: "cineraria_core" instantiated pixelsimd "nios_custom_instr_pixelsimd"
+Info: spu: "cineraria_core" instantiated avalonif_spu "spu"
+Info: mmcdma: "cineraria_core" instantiated mmcdma "mmcdma"
+Info: ps2_keyboard: "cineraria_core" instantiated ps2_component "ps2_keyboard"
+Info: gpio1: Starting RTL generation for module 'cineraria_core_gpio1'
+Info: gpio1:   Generation command is [exec C:/develop/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/develop/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/develop/altera/13.0sp1/quartus/sopc_builder/bin -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/develop/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cineraria_core_gpio1 --dir=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0017_gpio1_gen/ --quartus_dir=C:/develop/altera/13.0sp1/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt5992_8882688210985105237.dir/0017_gpio1_gen//cineraria_core_gpio1_component_configuration.pl  --do_build_sim=0  ]
+Info: gpio1: Done RTL generation for module 'cineraria_core_gpio1'
+Info: gpio1: "cineraria_core" instantiated altera_avalon_pio "gpio1"
+Info: vga: "cineraria_core" instantiated vga_component "vga"
+Info: blcon: "cineraria_core" instantiated backlight_controller "blcon"
+Info: nios2_fast_custom_instruction_master_translator: "cineraria_core" instantiated altera_customins_master_translator "nios2_fast_custom_instruction_master_translator"
+Info: nios2_fast_custom_instruction_master_multi_xconnect: "cineraria_core" instantiated altera_customins_xconnect "nios2_fast_custom_instruction_master_multi_xconnect"
+Info: nios2_fast_custom_instruction_master_multi_slave_translator0: "cineraria_core" instantiated altera_customins_slave_translator "nios2_fast_custom_instruction_master_multi_slave_translator0"
+Info: nios2_fast_instruction_master_translator: "cineraria_core" instantiated altera_merlin_master_translator "nios2_fast_instruction_master_translator"
+Info: nios2_fast_jtag_debug_module_translator: "cineraria_core" instantiated altera_merlin_slave_translator "nios2_fast_jtag_debug_module_translator"
+Info: nios2_fast_instruction_master_translator_avalon_universal_master_0_agent: "cineraria_core" instantiated altera_merlin_master_agent "nios2_fast_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_fast_jtag_debug_module_translator_avalon_universal_slave_0_agent: "cineraria_core" instantiated altera_merlin_slave_agent "nios2_fast_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_fast_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "cineraria_core" instantiated altera_avalon_sc_fifo "nios2_fast_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "cineraria_core" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "cineraria_core" instantiated altera_merlin_router "addr_router_001"
+Info: addr_router_002: "cineraria_core" instantiated altera_merlin_router "addr_router_002"
+Info: addr_router_003: "cineraria_core" instantiated altera_merlin_router "addr_router_003"
+Info: id_router: "cineraria_core" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "cineraria_core" instantiated altera_merlin_router "id_router_002"
+Info: id_router_003: "cineraria_core" instantiated altera_merlin_router "id_router_003"
+Info: addr_router_004: "cineraria_core" instantiated altera_merlin_router "addr_router_004"
+Info: id_router_004: "cineraria_core" instantiated altera_merlin_router "id_router_004"
+Info: limiter: "cineraria_core" instantiated altera_merlin_traffic_limiter "limiter"
+Info: burst_adapter: "cineraria_core" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "cineraria_core" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "cineraria_core" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "cineraria_core" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_demux_002: "cineraria_core" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_002"
+Info: cmd_xbar_demux_003: "cineraria_core" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_003"
+Info: cmd_xbar_mux: "cineraria_core" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: cmd_xbar_mux_002: "cineraria_core" instantiated altera_merlin_multiplexer "cmd_xbar_mux_002"
+Info: Reusing file C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/cineraria_core/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux: "cineraria_core" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_002: "cineraria_core" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: "cineraria_core" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/cineraria_core/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "cineraria_core" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/cineraria_core/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_xbar_demux_004: "cineraria_core" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_004"
+Info: rsp_xbar_demux_004: "cineraria_core" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_004"
+Info: rsp_xbar_mux_004: "cineraria_core" instantiated altera_merlin_multiplexer "rsp_xbar_mux_004"
+Info: Reusing file C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/cineraria_core/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "cineraria_core" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/cineraria_core/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/PROJECT/c85_ulexite/fpga/cineraria_ulexite/cineraria_core/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: irq_mapper: "cineraria_core" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_synchronizer: "cineraria_core" instantiated altera_irq_clock_crosser "irq_synchronizer"
+Info: cineraria_core: Done cineraria_core" with 57 modules, 362 files, 7454697 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

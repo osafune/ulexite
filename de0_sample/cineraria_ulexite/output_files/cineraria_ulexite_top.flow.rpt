@@ -1,0 +1,285 @@
+Flow report for cineraria_ulexite_top
+Tue Oct 15 04:45:33 2013
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Tue Oct 15 04:45:17 2013           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; cineraria_ulexite_top                           ;
+; Top-level Entity Name              ; cineraria_ulexite_top                           ;
+; Family                             ; Cyclone III                                     ;
+; Device                             ; EP3C16F484C6                                    ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 11,963 / 15,408 ( 78 % )                        ;
+;     Total combinational functions  ; 10,283 / 15,408 ( 67 % )                        ;
+;     Dedicated logic registers      ; 7,431 / 15,408 ( 48 % )                         ;
+; Total registers                    ; 7526                                            ;
+; Total pins                         ; 174 / 347 ( 50 % )                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 274,388 / 516,096 ( 53 % )                      ;
+; Embedded Multiplier 9-bit elements ; 31 / 112 ( 28 % )                               ;
+; Total PLLs                         ; 2 / 4 ( 50 % )                                  ;
++------------------------------------+-------------------------------------------------+
+
+
++-------------------------------------------+
+; Flow Settings                             ;
++-------------------+-----------------------+
+; Option            ; Setting               ;
++-------------------+-----------------------+
+; Start date & time ; 10/15/2013 04:41:35   ;
+; Main task         ; Compilation           ;
+; Revision Name     ; cineraria_ulexite_top ;
++-------------------+-----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                                             ;
++-------------------------------------+------------------------------------------------------------------+---------------+--------------------------------------------------------------------+----------------+
+; Assignment Name                     ; Value                                                            ; Default Value ; Entity Name                                                        ; Section Id     ;
++-------------------------------------+------------------------------------------------------------------+---------------+--------------------------------------------------------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 149890838176531.138177969504492                                  ; --            ; --                                                                 ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; None                                                             ; --            ; --                                                                 ; eda_simulation ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; altera_avalon_mm_clock_crossing_bridge                             ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; altera_avalon_sc_fifo                                              ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; altera_customins_master_translator                                 ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; altera_customins_slave_translator                                  ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; altera_irq_clock_crosser                                           ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; altera_merlin_burst_adapter                                        ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; altera_merlin_master_agent                                         ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; altera_merlin_master_translator                                    ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; altera_merlin_slave_agent                                          ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; altera_merlin_slave_translator                                     ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; altera_merlin_traffic_limiter                                      ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; altera_merlin_width_adapter                                        ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; altera_reset_controller                                            ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core                                                     ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_addr_router                                         ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_addr_router_001                                     ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_addr_router_002                                     ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_addr_router_003                                     ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_addr_router_004                                     ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_cmd_xbar_demux                                      ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_cmd_xbar_demux_001                                  ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_cmd_xbar_demux_002                                  ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_cmd_xbar_demux_003                                  ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_cmd_xbar_demux_004                                  ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_cmd_xbar_mux                                        ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_cmd_xbar_mux_002                                    ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_dipsw                                               ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_gpio1                                               ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_id_router                                           ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_id_router_002                                       ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_id_router_003                                       ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_id_router_004                                       ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_ipl_memory                                          ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_irq_mapper                                          ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_jtag_uart                                           ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_led                                                 ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_led_7seg                                            ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_nios2_fast                                          ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_nios2_fast_custom_instruction_master_multi_xconnect ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_psw                                                 ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_rsp_xbar_demux                                      ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_rsp_xbar_demux_002                                  ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_rsp_xbar_demux_004                                  ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_rsp_xbar_mux                                        ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_rsp_xbar_mux_001                                    ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_rsp_xbar_mux_004                                    ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_sdram                                               ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_sysid                                               ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_systimer                                            ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; cineraria_core_sysuart                                             ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                             ; --            ; fpoint_wrapper                                                     ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_mm_clock_crossing_bridge                           ; --            ; altera_avalon_mm_clock_crossing_bridge                             ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_sc_fifo                                            ; --            ; altera_avalon_sc_fifo                                              ; --             ;
+; IP_TOOL_NAME                        ; altera_customins_master_translator                               ; --            ; altera_customins_master_translator                                 ; --             ;
+; IP_TOOL_NAME                        ; altera_customins_slave_translator                                ; --            ; altera_customins_slave_translator                                  ; --             ;
+; IP_TOOL_NAME                        ; altera_irq_clock_crosser                                         ; --            ; altera_irq_clock_crosser                                           ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_burst_adapter                                      ; --            ; altera_merlin_burst_adapter                                        ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_master_agent                                       ; --            ; altera_merlin_master_agent                                         ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_master_translator                                  ; --            ; altera_merlin_master_translator                                    ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_slave_agent                                        ; --            ; altera_merlin_slave_agent                                          ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_slave_translator                                   ; --            ; altera_merlin_slave_translator                                     ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_traffic_limiter                                    ; --            ; altera_merlin_traffic_limiter                                      ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_width_adapter                                      ; --            ; altera_merlin_width_adapter                                        ; --             ;
+; IP_TOOL_NAME                        ; altera_reset_controller                                          ; --            ; altera_reset_controller                                            ; --             ;
+; IP_TOOL_NAME                        ; Qsys                                                             ; --            ; cineraria_core                                                     ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                             ; --            ; cineraria_core_addr_router                                         ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                             ; --            ; cineraria_core_addr_router_001                                     ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                             ; --            ; cineraria_core_addr_router_002                                     ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                             ; --            ; cineraria_core_addr_router_003                                     ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                             ; --            ; cineraria_core_addr_router_004                                     ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                      ; --            ; cineraria_core_cmd_xbar_demux                                      ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                      ; --            ; cineraria_core_cmd_xbar_demux_001                                  ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                      ; --            ; cineraria_core_cmd_xbar_demux_002                                  ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                      ; --            ; cineraria_core_cmd_xbar_demux_003                                  ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                      ; --            ; cineraria_core_cmd_xbar_demux_004                                  ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                        ; --            ; cineraria_core_cmd_xbar_mux                                        ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                        ; --            ; cineraria_core_cmd_xbar_mux_002                                    ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_pio                                                ; --            ; cineraria_core_dipsw                                               ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_pio                                                ; --            ; cineraria_core_gpio1                                               ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                             ; --            ; cineraria_core_id_router                                           ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                             ; --            ; cineraria_core_id_router_002                                       ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                             ; --            ; cineraria_core_id_router_003                                       ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                             ; --            ; cineraria_core_id_router_004                                       ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_onchip_memory2                                     ; --            ; cineraria_core_ipl_memory                                          ; --             ;
+; IP_TOOL_NAME                        ; altera_irq_mapper                                                ; --            ; cineraria_core_irq_mapper                                          ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_jtag_uart                                          ; --            ; cineraria_core_jtag_uart                                           ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_pio                                                ; --            ; cineraria_core_led                                                 ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_pio                                                ; --            ; cineraria_core_led_7seg                                            ; --             ;
+; IP_TOOL_NAME                        ; altera_nios2_qsys                                                ; --            ; cineraria_core_nios2_fast                                          ; --             ;
+; IP_TOOL_NAME                        ; altera_customins_xconnect                                        ; --            ; cineraria_core_nios2_fast_custom_instruction_master_multi_xconnect ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_pio                                                ; --            ; cineraria_core_psw                                                 ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                      ; --            ; cineraria_core_rsp_xbar_demux                                      ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                      ; --            ; cineraria_core_rsp_xbar_demux_002                                  ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                      ; --            ; cineraria_core_rsp_xbar_demux_004                                  ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                        ; --            ; cineraria_core_rsp_xbar_mux                                        ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                        ; --            ; cineraria_core_rsp_xbar_mux_001                                    ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                        ; --            ; cineraria_core_rsp_xbar_mux_004                                    ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_new_sdram_controller                               ; --            ; cineraria_core_sdram                                               ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_sysid_qsys                                         ; --            ; cineraria_core_sysid                                               ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_timer                                              ; --            ; cineraria_core_systimer                                            ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_uart                                               ; --            ; cineraria_core_sysuart                                             ; --             ;
+; IP_TOOL_NAME                        ; altera_nios_custom_instr_floating_point                          ; --            ; fpoint_wrapper                                                     ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; altera_avalon_mm_clock_crossing_bridge                             ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; altera_avalon_sc_fifo                                              ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; altera_customins_master_translator                                 ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; altera_customins_slave_translator                                  ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; altera_irq_clock_crosser                                           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; altera_merlin_burst_adapter                                        ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; altera_merlin_master_agent                                         ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; altera_merlin_master_translator                                    ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; altera_merlin_slave_agent                                          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; altera_merlin_slave_translator                                     ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; altera_merlin_traffic_limiter                                      ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; altera_merlin_width_adapter                                        ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; altera_reset_controller                                            ; --             ;
+; IP_TOOL_VERSION                     ; 13.0sp1                                                          ; --            ; cineraria_core                                                     ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_addr_router                                         ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_addr_router_001                                     ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_addr_router_002                                     ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_addr_router_003                                     ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_addr_router_004                                     ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_cmd_xbar_demux                                      ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_cmd_xbar_demux_001                                  ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_cmd_xbar_demux_002                                  ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_cmd_xbar_demux_003                                  ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_cmd_xbar_demux_004                                  ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_cmd_xbar_mux                                        ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_cmd_xbar_mux_002                                    ; --             ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                                      ; --            ; cineraria_core_dipsw                                               ; --             ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                                      ; --            ; cineraria_core_gpio1                                               ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_id_router                                           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_id_router_002                                       ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_id_router_003                                       ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_id_router_004                                       ; --             ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                                      ; --            ; cineraria_core_ipl_memory                                          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_irq_mapper                                          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                                      ; --            ; cineraria_core_jtag_uart                                           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                                      ; --            ; cineraria_core_led                                                 ; --             ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                                      ; --            ; cineraria_core_led_7seg                                            ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_nios2_fast                                          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_nios2_fast_custom_instruction_master_multi_xconnect ; --             ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                                      ; --            ; cineraria_core_psw                                                 ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_rsp_xbar_demux                                      ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_rsp_xbar_demux_002                                  ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_rsp_xbar_demux_004                                  ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_rsp_xbar_mux                                        ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_rsp_xbar_mux_001                                    ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_rsp_xbar_mux_004                                    ; --             ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                                      ; --            ; cineraria_core_sdram                                               ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; cineraria_core_sysid                                               ; --             ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                                      ; --            ; cineraria_core_systimer                                            ; --             ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                                      ; --            ; cineraria_core_sysuart                                             ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                             ; --            ; fpoint_wrapper                                                     ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                               ; --            ; --                                                                 ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                ; --            ; --                                                                 ; --             ;
+; MISC_FILE                           ; cineraria_core/synthesis/../../cineraria_core.cmp                ; --            ; --                                                                 ; --             ;
+; MISC_FILE                           ; cineraria_core/synthesis/../../cineraria_core.qsys               ; --            ; --                                                                 ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                                ; --            ; --                                                                 ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                                ; --            ; --                                                                 ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                                       ; --            ; --                                                                 ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                                       ; --            ; --                                                                 ; --             ;
+; PARTITION_COLOR                     ; 16764057                                                         ; --            ; --                                                                 ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                            ; --            ; --                                                                 ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                           ; --            ; --                                                                 ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                     ; --            ; --                                                                 ; --             ;
+; SLD_INFO                            ; QSYS_NAME cineraria_core HAS_SOPCINFO 1 GENERATION_ID 1381778683 ; --            ; cineraria_core                                                     ; --             ;
+; SOPCINFO_FILE                       ; cineraria_core/synthesis/../../cineraria_core.sopcinfo           ; --            ; --                                                                 ; --             ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                               ; --            ; --                                                                 ; --             ;
++-------------------------------------+------------------------------------------------------------------+---------------+--------------------------------------------------------------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:01:22     ; 1.0                     ; 857 MB              ; 00:01:22                           ;
+; Fitter                    ; 00:02:02     ; 1.3                     ; 1127 MB             ; 00:02:33                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 476 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:15     ; 1.1                     ; 666 MB              ; 00:00:19                           ;
+; Total                     ; 00:03:43     ; --                      ; --                  ; 00:04:17                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; GERHILDE         ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; GERHILDE         ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; GERHILDE         ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; GERHILDE         ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off cineraria_ulexite_top -c cineraria_ulexite_top
+quartus_fit --read_settings_files=off --write_settings_files=off cineraria_ulexite_top -c cineraria_ulexite_top
+quartus_asm --read_settings_files=off --write_settings_files=off cineraria_ulexite_top -c cineraria_ulexite_top
+quartus_sta cineraria_ulexite_top -c cineraria_ulexite_top
+
+
+

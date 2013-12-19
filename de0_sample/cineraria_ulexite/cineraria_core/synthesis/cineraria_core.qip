@@ -1,0 +1,315 @@
+set_global_assignment -entity "cineraria_core" -library "cineraria_core" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "cineraria_core" -library "cineraria_core" -name IP_TOOL_VERSION "13.0sp1"
+set_global_assignment -entity "cineraria_core" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "cineraria_core" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../cineraria_core.sopcinfo"]
+set_instance_assignment -entity "cineraria_core" -library "cineraria_core" -name SLD_INFO "QSYS_NAME cineraria_core HAS_SOPCINFO 1 GENERATION_ID 1381778683"
+set_global_assignment -library "cineraria_core" -name MISC_FILE [file join $::quartus(qip_path) "../../cineraria_core.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "cineraria_core" -name MISC_FILE [file join $::quartus(qip_path) "../../cineraria_core.qsys"]
+
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_limiter.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_limiter_002.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_width_adapter.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_width_adapter_003.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_burst_adapter.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_burst_adapter_002.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_rst_controller.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_rst_controller_001.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_nios2_fast_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_nios2_fast_jtag_debug_module_translator_avalon_universal_slave_0_agent_rdata_fifo.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_sdram_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_sdram_s1_translator_avalon_universal_slave_0_agent_rdata_fifo.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent_rsp_fifo.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_nios2_fast_jtag_debug_module_translator_avalon_universal_slave_0_agent.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_sdram_s1_translator_avalon_universal_slave_0_agent.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_nios2_fast_instruction_master_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_nios2_fast_data_master_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_spu_m1_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_vga_m1_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_peripherals_bridge_m0_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_nios2_fast_jtag_debug_module_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_ipl_memory_s1_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_sdram_s1_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_peripherals_bridge_s0_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_jtag_uart_avalon_jtag_slave_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_sysuart_s1_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_sysid_control_slave_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_systimer_s1_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_led_s1_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_dipsw_s1_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_spu_s1_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_mmcdma_s1_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_ps2_keyboard_avalon_slave_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_vga_s1_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_blcon_s1_translator.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_nios2_fast_instruction_master_translator_avalon_universal_master_0_agent.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_spu_m1_translator_avalon_universal_master_0_agent.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_vga_m1_translator_avalon_universal_master_0_agent.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_peripherals_bridge_m0_translator_avalon_universal_master_0_agent.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_nios2_fast_custom_instruction_master_multi_slave_translator0.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "cineraria_core_nios2_fast_custom_instruction_master_multi_slave_translator1.vhd"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_irq_clock_crosser.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_irq_mapper.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_width_adapter.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_address_alignment.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_uncompressor.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_rsp_xbar_mux_004.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_rsp_xbar_demux_004.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_cmd_xbar_demux_004.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_rsp_xbar_mux_001.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_rsp_xbar_mux.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_rsp_xbar_demux_002.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_rsp_xbar_demux.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_cmd_xbar_mux_002.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_cmd_xbar_mux.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_cmd_xbar_demux_003.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_cmd_xbar_demux_002.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_cmd_xbar_demux_001.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_cmd_xbar_demux.sv"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "cineraria_core" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_adapter.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_traffic_limiter.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_st_pipeline_base.v"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_id_router_004.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_addr_router_004.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_id_router_003.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_id_router_002.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_id_router.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_addr_router_003.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_addr_router_002.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_addr_router_001.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_addr_router.sv"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_agent.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_customins_slave_translator.sv"]
+set_global_assignment -library "cineraria_core" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_nios2_fast_custom_instruction_master_multi_xconnect.sv"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_customins_master_translator.v"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/backlight_control.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/vga_component.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/vga_avm.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/vga_linebuffer.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/vga_syncgen.vhd"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_gpio1.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Altera_UP_PS2.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Altera_UP_PS2_Command_Out.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Altera_UP_PS2_Data_In.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ps2_component.v"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/avalonif_mmcdma.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/avalonif_mmc.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/dmamem.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/avalonif_spu.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/loreley_businterface.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/loreley_cacheram.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/loreley_core.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/loreley_dacif_bu9480f_ds.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/loreley_decoder.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/loreley_dpram.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/loreley_envram.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/loreley_irqencode.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/loreley_lfsr.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/loreley_slotengine.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/loreley_waveadder.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/loreley_wromcache.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/multiple_16x16.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/multiple_16x9.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/STARROSE_SPU.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/wavebuffer.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/wsg_dsdac8.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/wsg_spdif.vhd"]
+set_global_assignment -library "cineraria_core" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/loreley_envram.mif"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/pixelsimd.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/pixelsimd_blend_u8.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/pixelsimd_mult_s8xs10.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/pixelsimd_mult_u8xu8.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/pixelsimd_sat_u8.vhd"]
+set_global_assignment -library "cineraria_core" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/pixelsimd_yuvdec.vhd"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_dipsw.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_psw.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_led_7seg.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_led.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_systimer.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_sysid.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_ipl_memory.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_sdram.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_sysuart.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_jtag_uart.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/fpoint_wrapper.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/fpoint_qsys.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/fpoint_hw_qsys.v"]
+set_global_assignment -library "cineraria_core" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_nios2_fast.ocp"]
+set_global_assignment -library "cineraria_core" -name SDC_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_nios2_fast.sdc"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_nios2_fast.v"]
+set_global_assignment -library "cineraria_core" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_nios2_fast_bht_ram.mif"]
+set_global_assignment -library "cineraria_core" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_nios2_fast_dc_tag_ram.mif"]
+set_global_assignment -library "cineraria_core" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_nios2_fast_ic_tag_ram.mif"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_nios2_fast_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_nios2_fast_jtag_debug_module_tck.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_nios2_fast_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_nios2_fast_mult_cell.v"]
+set_global_assignment -library "cineraria_core" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_nios2_fast_ociram_default_contents.mif"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_nios2_fast_oci_test_bench.v"]
+set_global_assignment -library "cineraria_core" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_nios2_fast_rf_ram_a.mif"]
+set_global_assignment -library "cineraria_core" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_nios2_fast_rf_ram_b.mif"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cineraria_core_nios2_fast_test_bench.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_mm_clock_crossing_bridge.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_dc_fifo.v"]
+set_global_assignment -library "cineraria_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_dcfifo_synchronizer_bundle.v"]
+
+set_global_assignment -entity "altera_irq_clock_crosser" -library "cineraria_core" -name IP_TOOL_NAME "altera_irq_clock_crosser"
+set_global_assignment -entity "altera_irq_clock_crosser" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_irq_clock_crosser" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_irq_mapper" -library "cineraria_core" -name IP_TOOL_NAME "altera_irq_mapper"
+set_global_assignment -entity "cineraria_core_irq_mapper" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_irq_mapper" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_width_adapter"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_rsp_xbar_mux_004" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "cineraria_core_rsp_xbar_mux_004" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_rsp_xbar_mux_004" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_rsp_xbar_demux_004" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "cineraria_core_rsp_xbar_demux_004" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_rsp_xbar_demux_004" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_cmd_xbar_demux_004" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "cineraria_core_cmd_xbar_demux_004" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_cmd_xbar_demux_004" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_rsp_xbar_mux_001" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "cineraria_core_rsp_xbar_mux_001" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_rsp_xbar_mux_001" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_rsp_xbar_mux" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "cineraria_core_rsp_xbar_mux" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_rsp_xbar_mux" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_rsp_xbar_demux_002" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "cineraria_core_rsp_xbar_demux_002" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_rsp_xbar_demux_002" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_rsp_xbar_demux" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "cineraria_core_rsp_xbar_demux" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_rsp_xbar_demux" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_cmd_xbar_mux_002" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "cineraria_core_cmd_xbar_mux_002" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_cmd_xbar_mux_002" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_cmd_xbar_mux" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "cineraria_core_cmd_xbar_mux" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_cmd_xbar_mux" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_cmd_xbar_demux_003" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "cineraria_core_cmd_xbar_demux_003" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_cmd_xbar_demux_003" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_cmd_xbar_demux_002" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "cineraria_core_cmd_xbar_demux_002" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_cmd_xbar_demux_002" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_cmd_xbar_demux_001" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "cineraria_core_cmd_xbar_demux_001" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_cmd_xbar_demux_001" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_cmd_xbar_demux" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "cineraria_core_cmd_xbar_demux" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_cmd_xbar_demux" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_reset_controller" -library "cineraria_core" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_reset_controller" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_burst_adapter"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_traffic_limiter"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_id_router_004" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "cineraria_core_id_router_004" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_id_router_004" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_addr_router_004" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "cineraria_core_addr_router_004" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_addr_router_004" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_id_router_003" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "cineraria_core_id_router_003" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_id_router_003" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_id_router_002" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "cineraria_core_id_router_002" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_id_router_002" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_id_router" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "cineraria_core_id_router" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_id_router" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_addr_router_003" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "cineraria_core_addr_router_003" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_addr_router_003" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_addr_router_002" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "cineraria_core_addr_router_002" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_addr_router_002" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_addr_router_001" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "cineraria_core_addr_router_001" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_addr_router_001" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_addr_router" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "cineraria_core_addr_router" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_addr_router" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "cineraria_core" -name IP_TOOL_NAME "altera_avalon_sc_fifo"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_slave_agent"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_agent" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_master_agent"
+set_global_assignment -entity "altera_merlin_master_agent" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_master_agent" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_slave_translator"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_translator" -library "cineraria_core" -name IP_TOOL_NAME "altera_merlin_master_translator"
+set_global_assignment -entity "altera_merlin_master_translator" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_master_translator" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_customins_slave_translator" -library "cineraria_core" -name IP_TOOL_NAME "altera_customins_slave_translator"
+set_global_assignment -entity "altera_customins_slave_translator" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_customins_slave_translator" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_nios2_fast_custom_instruction_master_multi_xconnect" -library "cineraria_core" -name IP_TOOL_NAME "altera_customins_xconnect"
+set_global_assignment -entity "cineraria_core_nios2_fast_custom_instruction_master_multi_xconnect" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_nios2_fast_custom_instruction_master_multi_xconnect" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_customins_master_translator" -library "cineraria_core" -name IP_TOOL_NAME "altera_customins_master_translator"
+set_global_assignment -entity "altera_customins_master_translator" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_customins_master_translator" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_gpio1" -library "cineraria_core" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "cineraria_core_gpio1" -library "cineraria_core" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "cineraria_core_gpio1" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_dipsw" -library "cineraria_core" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "cineraria_core_dipsw" -library "cineraria_core" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "cineraria_core_dipsw" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_psw" -library "cineraria_core" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "cineraria_core_psw" -library "cineraria_core" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "cineraria_core_psw" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_led_7seg" -library "cineraria_core" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "cineraria_core_led_7seg" -library "cineraria_core" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "cineraria_core_led_7seg" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_led" -library "cineraria_core" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "cineraria_core_led" -library "cineraria_core" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "cineraria_core_led" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_systimer" -library "cineraria_core" -name IP_TOOL_NAME "altera_avalon_timer"
+set_global_assignment -entity "cineraria_core_systimer" -library "cineraria_core" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "cineraria_core_systimer" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_sysid" -library "cineraria_core" -name IP_TOOL_NAME "altera_avalon_sysid_qsys"
+set_global_assignment -entity "cineraria_core_sysid" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_sysid" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_ipl_memory" -library "cineraria_core" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "cineraria_core_ipl_memory" -library "cineraria_core" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "cineraria_core_ipl_memory" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_sdram" -library "cineraria_core" -name IP_TOOL_NAME "altera_avalon_new_sdram_controller"
+set_global_assignment -entity "cineraria_core_sdram" -library "cineraria_core" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "cineraria_core_sdram" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_sysuart" -library "cineraria_core" -name IP_TOOL_NAME "altera_avalon_uart"
+set_global_assignment -entity "cineraria_core_sysuart" -library "cineraria_core" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "cineraria_core_sysuart" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_jtag_uart" -library "cineraria_core" -name IP_TOOL_NAME "altera_avalon_jtag_uart"
+set_global_assignment -entity "cineraria_core_jtag_uart" -library "cineraria_core" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "cineraria_core_jtag_uart" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "fpoint_wrapper" -library "cineraria_core" -name IP_TOOL_NAME "altera_nios_custom_instr_floating_point"
+set_global_assignment -entity "fpoint_wrapper" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "fpoint_wrapper" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "cineraria_core_nios2_fast" -library "cineraria_core" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "cineraria_core_nios2_fast" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "cineraria_core_nios2_fast" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_avalon_mm_clock_crossing_bridge" -library "cineraria_core" -name IP_TOOL_NAME "altera_avalon_mm_clock_crossing_bridge"
+set_global_assignment -entity "altera_avalon_mm_clock_crossing_bridge" -library "cineraria_core" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_avalon_mm_clock_crossing_bridge" -library "cineraria_core" -name IP_TOOL_ENV "Qsys"
